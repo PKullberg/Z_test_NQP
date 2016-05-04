@@ -1,0 +1,19 @@
+[Settings]
+removal rule = 1
+warp factor  = 10
+edge removal = 1
+
+use planning unit layer = 1
+planning unit layer file = ../plu.tif
+
+use tree connectivity = 1
+tree connectivity file = ../tree_file.txt
+BQP profiles file = ../NQP_file.txt
+
+[Administrative units]
+use ADMUs = 1
+ADMU descriptions file = ../admu_desc.txt
+ADMU layer file = ../hm.tif
+ADMU weight matrix = ../admu_weights.txt
+ADMU mode = 1
+

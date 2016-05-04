@@ -1,0 +1,9 @@
+[Settings]
+removal rule = 1
+warp factor  = 10
+edge removal = 1
+
+use planning unit layer = 1
+planning unit layer file = ../plu.tif
+
+
