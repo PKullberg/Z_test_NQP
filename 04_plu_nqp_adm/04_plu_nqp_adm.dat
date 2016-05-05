@@ -10,8 +10,6 @@ use tree connectivity = 1
 tree connectivity file = ../tree_file.txt
 BQP profiles file = ../NQP_file.txt
 
-output proportional loss ranking = 1
-
 [Administrative units]
 use ADMUs = 1
 ADMU descriptions file = ../admu_desc.txt
