@@ -1,0 +1,257 @@
+Zonation 4.0.0rc1_compact, build: Sep 19 2014 12:45:08
+==========================================================================
+The Zonation software is distributed in the  hope that it will be useful, 
+but WITHOUT ANY WARRANTY; without even the implied warranty of 
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+==========================================================================
+ For more information and conditions of use of this software, see the
+ disclaimer in Help->About Zonation, in the graphical user interface
+
+Starting Zonation run on 'taito-login3.csc.fi' at 2:39:20 PM (2016/5/5) 
+Locale is: en_US.UTF-8
+Zonation core process parameters: 
+   run mode: normal run (-r)
+   settings file: 04_plu_nqp_adm.dat
+   biodiversity features list file: ../NQP_spp.spp
+   output file(s): 04_plu_nqp_adm_out/04_plu_nqp_adm_out
+   info-gap alpha: 0
+   use_smoothing: 0
+   smoothing_alpha_multiplier: 1
+   autoclose (deprecated): 0
+
+Reading settings file: 04_plu_nqp_adm.dat
+   Option not overriden in command line, removal rule: 1
+   Option not overriden in command line, warp factor: 1
+
+Output settings:
+   Output weighted range size corrected richness map: yes
+   Output proportional loss rank map: no
+
+********** Arbitrary kernels not enabled ********
+
+*************** NOT USING ANALYSIS AREA MASK **************
+
+ADMU mode = 1
+*************** USING PLULA **************
+  Planning units file = ../plu.tif
+*************** USING Tree connectivity measure with PLULAs ********
+   Tree specification file = ../tree_file.txt
+Loading list of biodiversity features from file: ../NQP_spp.spp
+Row count in the features/species list file: 10
+../base_spp.tif: 100 rows, 100 columns read. Nodata cells =  396, sum of elements = 9604
+---------
+Loading planning units layer (PLULA) from ../plu.tif
+ Checking planning units identifiers/numbers...
+Planning units layer has rows: 100,  cols: 100,  data elements: 9604,  number of units: 9
+Planning unit structures allocated successfully!
+ Processing planning units layer, phase 2...
+Missing elements in planning units layer 396
+Sum of map/grid elements (cells) in planning units layer = 9652
+Number of planning units found: 9
+   minimum number of cells in any planning unit: 529
+   maximum number of cells in any planning unit: 4900
+Planning units layer loaded and analysed successfully.
+---------
+Successfully loaded 1st stage of planning units connectivity hierarchy from ../tree_file.txt
+    Count of rows  8
+    Root PLU count 1
+    Uplinked PLUs  7
+    Leaf PLU count 3
+Count of PLUs in...
+               basin #4 = 5
+               basin #9 = 6
+Count of basins = 2
+
+Matrix columns/x dimension: 100, rows/y dimension: 100
+
+LOADING ADMINISTRATIVE UNITS (ADMU) INFO
+Loading ADMU descriptions and weights from file ../admu_desc.txt
+ADMU descriptions list file successfully loaded; count of ADMUs = 3
+Loading ADMU weight matrix file ../admu_weights.txt
+(10) ADMU features x (3 )ADMUs weights matrix successfully loaded, with matching feature and ADMU counts 
+../hm.tif: 100 rows, 100 columns read. Nodata cells =  396, sum of elements = 9700
+Map of administrative units loaded successfully.
+Locations with ok ADMU number = 9604
+Locations with missing or failed ADMU number = 396
+
+ADMU LOAD COMPLETED
+Identified 3 administrative units
+ADMU COMBINED WEIGHTS COMPUTED.
+ADMU row count for per ADMU curves: 0
+Administrative units successfully loaded.
+
+Loading BQP profiles from file ../NQP_file.txt
+BQProf 1 starts from (1.00,1.00) ends at (0.00,0.00)
+BQProf 2 starts from (1.00,1.00) ends at (0.00,0.00)
+ Tree connectivity BQP profiles linked
+
+****** REMOVAL RULE: core-area Zonation (CAZ) *******
+
+****** NOT using Info-gap distribution discounting uncertainty analysis ****************
+
+
+*** Not using "drop 0 occurrence features", all features will be processed even if they do not occur anywhere in the analysis area.
+
+****** NOT using distribution smoothing, interactions or matrix connectivity *******
+
+======------ Allocating memory for input layers... ------======
+Using compact structure (lookup version),  sizeof(Occur_Container): 18, sizeof(allocated occurrence): 6
+Counting effective occurrencies
+Time: 1462448360 = 2:39:20 PM (2016/5/5) 
+Feature file #1: ../base_spp.tif; non-missing cells: 9604
+Feature file #2: ../tr2.tif; non-missing cells: 9604
+Feature file #3: ../tr3.tif; non-missing cells: 9604
+Feature file #4: ../tr4.tif; non-missing cells: 9604
+Feature file #5: ../tr5.tif; non-missing cells: 9604
+Feature file #6: ../tr6.tif; non-missing cells: 9604
+Feature file #7: ../tr7.tif; non-missing cells: 9604
+Feature file #8: ../tr8.tif; non-missing cells: 9604
+Feature file #9: ../tr9.tif; non-missing cells: 9604
+Feature file #10: ../tr10.tif; non-missing cells: 9604
+Total # of feature layers: 10
+Total # of cells in every layer: 10000
+Effective # of cells (cells with any occurrence, globally): 9604
+Total # of occurrencies: 96040, counted across 10 layers; average across layers: 9604
+Percentage of globally effective occurrencies = 100 % (relative to total effective cells) = 96.04 % (relative to total cells)
+Memory required for biodiversity features: 0.7907 MB, of which base memory: 0.2412 MB, and occurrencies require: 0.5495 MB
+Time now: 1462448360 = 2:39:20 PM (2016/5/5) 
+Finished preload/counting effective occurrencies. Elapsed: 0 seconds.
+======------ Allocating memory for input layers: finished successfully ------======
+
+******=====----- Loading feature (e.g., species) data layers -----=====**********
+* Loaded biodiversity feature file #1, ../base_spp.tif, non-missing cells:9604, their sum: 9604
+* Loaded biodiversity feature file #2, ../tr2.tif, non-missing cells:9604, their sum: 52
+* Loaded biodiversity feature file #3, ../tr3.tif, non-missing cells:9604, their sum: 354
+* Loaded biodiversity feature file #4, ../tr4.tif, non-missing cells:9604, their sum: 77
+* Loaded biodiversity feature file #5, ../tr5.tif, non-missing cells:9604, their sum: 184
+* Loaded biodiversity feature file #6, ../tr6.tif, non-missing cells:9604, their sum: 968
+* Loaded biodiversity feature file #7, ../tr7.tif, non-missing cells:9604, their sum: 513
+* Loaded biodiversity feature file #8, ../tr8.tif, non-missing cells:9604, their sum: 270
+* Loaded biodiversity feature file #9, ../tr9.tif, non-missing cells:9604, their sum: 170
+* Loaded biodiversity feature file #10, ../tr10.tif, non-missing cells:9604, their sum: 20
+Calculating centers of the distributions of 10 features...
+
+******=====----- Finished loading and transformation of feature data layers -----=====*********
+
+Calculating richness across biodiversity features...
+Done in 0 seconds. Time now: 2:39:20 PM (2016/5/5) 
+Saving raster map of weighted range size corrected richness
+Saving raster: 04_plu_nqp_adm_out/04_plu_nqp_adm_out.CAZ_E.wrscr.compressed.tif (GTiff format)
+
+******=====----- Preparing to start the ranking process... -----=====**********
+Note: using edge removal.
+
+Checking area and effective cells within administrative units...
+Admin. unit 0 (id: 0), area: 2304.000000, 2304 effective cells
+Admin. unit 1 (id: 1), area: 4900.000000, 4900 effective cells
+Admin. unit 2 (id: 2), area: 2400.000000, 2400 effective cells
+
+
+Loaded data and initialized in 0 seconds. Current time: 2:39:20 PM (2016/5/5) 
+Cells with data = 9604; locations with missing values = 396
+
+---------------------======********** RANKING STARTS HERE ***********======-----------------------
+Initially removed cells count = 0
+Note: No initial removal was used.
+
+Biodiversity features performance levels check. Proportions remaining:
+---------
+Feature 1:    1
+Feature 2:    1
+Feature 3:    1
+Feature 4:    1
+Feature 5:    1
+Feature 6:    1
+Feature 7:    1
+Feature 8:    1
+Feature 9:    1
+Feature 10:    1
+---------
+Minimum proportion remaining: 0.9999999, average:    1, weighted average:    1, maximum:    1
+
+Checking consistency of planning units (PLU) layer...
+PLU check ok - PLUs and data are aligned, OK total         = 10000
+                                          OK with data cnt = 9604
+         Missing data elements in PLU file = 396
+   PLU layer consistency check successful!
+Checking distributions of features in planning units, and allocating vectors of distributions within planning units. This may take a while...
+PLULA data vectors allocated with success for all PLULAs.
+
+The following lines provide information on how the ranking is done by iterative removal of cells, with 6 columns per line:
+Cells removed, proportion of landscape remaining, cost of remaining landscape, edge list length, smallest remaining proportion in all biodiversity features (e.g. species), time elapsed (s)
+----------------------------------------------------------------------------------------------------------------------------
+             0            100%%              0           8354              1            0
+ Removing PLU, id: 9, cells: 4900, x: 98, y: 98
+           384        96.0021%%           9221           9221              1            0
+           768        92.0042%%           8837           8837              1            0
+          1152        88.0062%%           8453           8453              1            0
+          1536        84.0083%%           8069           8069              1            0
+          1920        80.0104%%           7685           7685              1            0
+          2304        76.0125%%           7301           7301              1            0
+          2688        72.0146%%           6917           6917              1            0
+          3072        68.0167%%           6533           6533              1            0
+          3456        64.0187%%           6149           6149              1            0
+          3840        60.0208%%           5765           5765              1            0
+          4224        56.0229%%           5381           5381              1            0
+          4608         52.025%%           4997           4997              1            0
+ Removing PLU, id: 7, cells: 625, x: 71, y: 48
+          4992        48.0271%%           4613           4613   -6.59842e-06            0
+          5376        44.0292%%           4229           4229   -6.59842e-06            0
+ Removing PLU, id: 8, cells: 625, x: 98, y: 48
+          5760        40.0312%%           3845           3845   -6.59842e-06            0
+          6144        36.0333%%           3461           3461   -6.59842e-06            0
+ Removing PLU, id: 3, cells: 575, x: 65, y: 23
+          6528        32.0354%%           3077           3077   -6.59842e-06            0
+ Removing PLU, id: 4, cells: 575, x: 98, y: 23
+          6912        28.0375%%           2693           2693   -6.59842e-06            0
+          7296        24.0396%%           2309           2309   -6.59842e-06            0
+ Removing PLU, id: 2, cells: 575, x: 48, y: 1
+          7680        20.0416%%           1925           1925   -6.59842e-06            0
+ Removing PLU, id: 1, cells: 529, x: 23, y: 1
+          8064        16.0437%%           1541           1541   -6.59842e-06            0
+ Removing PLU, id: 6, cells: 625, x: 48, y: 24
+          8448        12.0458%%           1157           1157   -6.59842e-06            0
+          8832        8.04789%%            773            773   -6.59842e-06            0
+ Removing PLU, id: 5, cells: 575, x: 23, y: 24
+          9216        4.04997%%            389            389   -1.86467e-05            0
+          9600      0.0520587%%              5              5   -1.86467e-05            0
+          9604              0%%              0              0              0            0
+----------------------------------------------------------------------------------------------------------------------------
+Total count of cells removed = 9604
+
+Done in 0 seconds.
+Found 554 ties.
+
+Biodiversity features performance levels check. Proportions remaining:
+---------
+Feature 1:    0
+Feature 2:    0
+Feature 3:    0
+Feature 4:    0
+Feature 5:    0
+Feature 6:    0
+Feature 7:    0
+Feature 8:    0
+Feature 9:    0
+Feature 10:    0
+---------
+Minimum proportion remaining:    0, average:    0, weighted average:    0, maximum:    0
+
+============================================================
+* Writing final output files...
+Writing file of feature information: 04_plu_nqp_adm_out/04_plu_nqp_adm_out.CAZ_E.features_info.txt
+Writing file of performance (representation, coverage, etc.) curves: 04_plu_nqp_adm_out/04_plu_nqp_adm_out.CAZ_E.curves.txt
+Writing output ranking as an image...
+Saving image: 04_plu_nqp_adm_out/04_plu_nqp_adm_out.CAZ_E.jpg (JPEG format)
+Writing ranking as a GIS raster map...
+Saving raster: 04_plu_nqp_adm_out/04_plu_nqp_adm_out.CAZ_E.rank.compressed.tif (GTiff format)
+ Note: not writing 'proportional loss map'
+Preparing redistributed rank map for administrative units...
+Writing redistributed rank map for administrative units: 04_plu_nqp_adm_out/04_plu_nqp_adm_out.CAZ_E.ADMU.redistributed.rank.asc
+Saving raster: 04_plu_nqp_adm_out/04_plu_nqp_adm_out.CAZ_E.ADMU.redistributed.rank.compressed.tif (GTiff format)
+No automated post-processing file specified
+============================================================
+Removed all planning units - OK.
+Finished spatial prioritization process. Freeing data structures in memory...
+Finished at 2:39:20 PM (2016/5/5) 
+Elapsed time: 224 ms == 6.22e-05 hours == 2.59e-06 days

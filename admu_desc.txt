@@ -1,3 +1,4 @@
 #ID G_A beta_A  name
-0   0.9 1   up
+0   0.7 1   upper-right
 1   0.1 1   low
+2   0.2 1   upper-left	

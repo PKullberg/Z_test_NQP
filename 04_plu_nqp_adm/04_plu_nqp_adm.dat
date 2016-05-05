@@ -1,6 +1,6 @@
 [Settings]
 removal rule = 1
-warp factor  = 10
+warp factor  = 1
 edge removal = 1
 
 use planning unit layer = 1
@@ -9,6 +9,8 @@ planning unit layer file = ../plu.tif
 use tree connectivity = 1
 tree connectivity file = ../tree_file.txt
 BQP profiles file = ../NQP_file.txt
+
+output proportional loss ranking = 1
 
 [Administrative units]
 use ADMUs = 1

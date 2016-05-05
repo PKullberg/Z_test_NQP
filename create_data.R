@@ -1,15 +1,18 @@
 ### Create dummy data for Z nqp tests
-setwd("C:/HY-Data/KULLBERG/Peter/NQP_test/")
+# setwd("C:/HY-Data/KULLBERG/Peter/NQP_test/")
+# setwd("/wrk/pkullber/Z_test_NQP")
+
 
 library(raster)
 
+# create dummy spp that covers the whole area (to avoid possible problems caused by cells with no spp data)
 t1 <- matrix(1, 100, 100)
 t1[c(1, 100),  ] <- NA
 t1[ ,c(1, 100)] <- NA
 tr1 <- raster(t1)
 writeRaster(tr1, "base_spp.tif", NAflag=-1, format="GTiff", overwrite = T)
 
-par(mfrow=c(3,5))
+# create some random spp
 for (i in 2:10) {
   x1 <- floor(runif(1, 0, 100))
   x2 <- floor(runif(1, x1, 100))
@@ -21,23 +24,10 @@ for (i in 2:10) {
   t[c(1, 100),  ] <- NA
   t[ ,c(1, 100)] <- NA
   rast <- raster(t)
-  plot(rast)
   writeRaster(rast, paste("tr", i, sep = ""), NAflag=-1, format="GTiff", overwrite = T)
 }
 
-par(mfrow=c(3,5))
-for (i in 11:15) {
-  y1 <- floor(runif(1, 0, 100))
-
-  t <- matrix(0, 100, 100)
-  t[ ,y1:100 ] <- 1
-  t[c(1, 100),  ] <- NA
-  t[ ,c(1, 100)] <- NA
-  rast <- raster(t)
-  plot(rast)
-  writeRaster(rast, paste("tr", i, sep = ""), NAflag=-1, format="GTiff", overwrite = T)
-}
-
+# plannin unit layer
 pl <- matrix(0, 100, 100)
 pl[0:25, 0:25] <- 1
 pl[0:25, 25:50] <- 2
@@ -53,15 +43,11 @@ pl[ ,c(1, 100)] <- NA
 plr <- raster(pl)
 writeRaster(plr, "plu.tif", NAflag=-1, format="GTiff", overwrite = T)
 
+# admu layer
 hm <- matrix(0, 100, 100)
 hm[50:100, ] <- 1
-hm[c(1, 100),  ] <- NA
-hm[ ,c(1, 100)] <- NA
-hmr <- raster(hm)
-writeRaster(hmr, "hm.tif", NAflag=-1, format="GTiff", overwrite = T)
-
 hm[1:49, 50:100] <- 2
 hm[c(1, 100),  ] <- NA
 hm[ ,c(1, 100)] <- NA
 hmr <- raster(hm)
-writeRaster(hmr, "06_hm.tif", NAflag=-1, format="GTiff", overwrite = T)
+writeRaster(hmr, "hm.tif", NAflag=-1, format="GTiff", overwrite = T)
